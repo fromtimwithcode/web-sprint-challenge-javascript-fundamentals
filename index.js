@@ -30,6 +30,8 @@ function summation(num) {
   return num * (num + 1) / 2;
   }
 
+  console.log('Task 2: ', summation(5));
+
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
 
@@ -60,6 +62,7 @@ const zooAnimals = [
     return displayNames;
   }
   
+  console.log('Request 1 (.forEach): ', animalNames(zooAnimals));
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
@@ -67,10 +70,13 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(array){
+    const lowerCaseAnimals = array.map(item => item.animal_name.toLowerCase());
+
+    return lowerCaseAnimals;
   }
   
+  console.log('Request 2 (.map): ', lowerCaseNames(zooAnimals));
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoo is concerned about animals with a lower population count. 
