@@ -17,9 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
-
-
+// Nested functions can access the variable internal because nested functions have access to variables declared in their outer scope due to a closure. Closures give access to outer function's scope from an inner function and they are created each time a function is created.
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
 /* Use summation to do the following:
